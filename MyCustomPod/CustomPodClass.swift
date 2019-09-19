@@ -9,7 +9,7 @@
 import Foundation
 
 
-public final class CustomPodClass{
+public class CustomPodClass{
     
     
     let name: String = "Pod class"
