@@ -15,6 +15,7 @@
 		5FB173402333ADB000B9812B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FB1733E2333ADB000B9812B /* Main.storyboard */; };
 		5FB173422333ADB000B9812B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FB173412333ADB000B9812B /* Assets.xcassets */; };
 		5FB173452333ADB000B9812B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FB173432333ADB000B9812B /* LaunchScreen.storyboard */; };
+		5FB1734B2333AEBF00B9812B /* CustomPodClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB1734A2333AEBF00B9812B /* CustomPodClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,7 @@
 		5FB173412333ADB000B9812B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5FB173442333ADB000B9812B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5FB173462333ADB000B9812B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5FB1734A2333AEBF00B9812B /* CustomPodClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPodClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 			children = (
 				5FB1731D2333AD9D00B9812B /* MyCustomPod.h */,
 				5FB1731E2333AD9D00B9812B /* Info.plist */,
+				5FB1734A2333AEBF00B9812B /* CustomPodClass.swift */,
 			);
 			path = MyCustomPod;
 			sourceTree = "<group>";
@@ -199,6 +202,7 @@
 				TargetAttributes = {
 					5FB173192333AD9D00B9812B = {
 						CreatedOnToolsVersion = 10.3;
+						LastSwiftMigration = 1030;
 					};
 					5FB173222333AD9D00B9812B = {
 						CreatedOnToolsVersion = 10.3;
@@ -260,6 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FB1734B2333AEBF00B9812B /* CustomPodClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,6 +440,7 @@
 		5FB1732F2333AD9D00B9812B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -451,6 +457,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.MyCustomPod;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -459,6 +466,7 @@
 		5FB173302333AD9D00B9812B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -483,6 +491,7 @@
 		5FB173322333AD9D00B9812B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MyCustomPodTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -500,6 +509,7 @@
 		5FB173332333AD9D00B9812B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = MyCustomPodTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
