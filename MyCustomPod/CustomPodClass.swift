@@ -17,4 +17,8 @@ public final class CustomPodClass{
     func giveMeName() -> String{
         return name
     }
+    
+    func giveMeLastName() -> String{
+        return "idk"
+    }
 }
