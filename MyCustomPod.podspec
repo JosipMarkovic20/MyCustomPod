@@ -16,6 +16,6 @@ This CocoaPods library returns its name when you ask nicely.
   spec.swift_version = "4.2"
 
   spec.source        = { :git => "https://github.com/JosipMarkovic20/MyCustomPod.git", :tag => "0.0.1" }
-  spec.source_files  = "SwiftyLib/**/*.{h,m,swift}"
+  spec.source_files  = "MyCustomPod/**/*.{h,m,swift}"
 
 end
