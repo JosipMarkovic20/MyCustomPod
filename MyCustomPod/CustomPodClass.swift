@@ -19,6 +19,7 @@ public final class CustomPodClass{
     }
     
     func giveMeLastName() -> String{
-        return "idk"
+        let lastName = "last name"
+        return lastName
     }
 }
